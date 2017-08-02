@@ -125,6 +125,8 @@ struct Vector2 {
 
 	Vector2 operator/(const real_t &rvalue) const;
 
+	Vector2 operator%(const real_t &rvalue) const;
+
 	void operator/=(const real_t &rvalue);
 
 	Vector2 operator-() const;

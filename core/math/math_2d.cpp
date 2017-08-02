@@ -146,6 +146,11 @@ Vector2 Vector2::operator/(const real_t &rvalue) const {
 	return Vector2(x / rvalue, y / rvalue);
 };
 
+Vector2 Vector2::operator%(const real_t &rvalue) const {
+
+	return Vector2( Math::fmod(x,rvalue), Math::fmod(y,rvalue));
+};
+
 void Vector2::operator/=(const real_t &rvalue) {
 
 	x /= rvalue;
